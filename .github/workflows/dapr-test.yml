@@ -76,7 +76,7 @@ jobs:
         with:
           repository: ${{ env.CHECKOUT_REPO }}
           ref: ${{ env.CHECKOUT_REF }}
-      - uses: azure/setup-kubectl@v1
+      - uses: azure/setup-kubectl@v3
         with:
           version: ${{ env.KUBECTLVER }}
         id: install
